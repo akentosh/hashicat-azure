@@ -93,8 +93,8 @@ resource "azurerm_virtual_machine" "catapp" {
   tags = {
     Team       = "Kroterraformers"
     Maintainer = "akentosh"
-    #    Billable   = true
-    #    Department = "sunrise"
+    Billable   = true
+    Department = "sunrise"
     Application = "petapp"
   }
   network_interface_ids         = [azurerm_network_interface.catapp-nic.id]
