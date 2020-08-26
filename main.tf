@@ -95,6 +95,7 @@ resource "azurerm_virtual_machine" "catapp" {
     Maintainer = "akentosh"
     #    Billable   = true
     #    Department = "sunrise"
+    Application = "petapp"
   }
   network_interface_ids         = [azurerm_network_interface.catapp-nic.id]
   delete_os_disk_on_termination = "true"
